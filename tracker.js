@@ -20,19 +20,19 @@ setInterval(function() {
     var date = new Date();
 	var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 	try {
-        var last_seen = document.getElementsByClassName("i1XSV")[0].innerText;
-        if (checked === 0) {
-            last_time = new Date(date);
-            console.log(time + ' ' + last_seen);
-            checked = 1;
-        }
+		var last_seen = document.getElementsByClassName("i1XSV")[0].innerText;
+		if (checked === 0) {
+		    last_time = new Date(date);
+		    console.log(time + ' ' + last_seen);
+		    checked = 1;
+		}
 	}
 	catch(err) {
 		if (checked === 1) {
-            checked = 0;
-            console.log(time + ' offline');
-            get_time_diff();
-            console.log('------------------');
-        }
+			checked = 0;
+			console.log(time + ' offline');
+			get_time_diff();
+			console.log('------------------');
+		}
 	}
 }, 1000);
