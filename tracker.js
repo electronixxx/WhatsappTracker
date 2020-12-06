@@ -20,7 +20,7 @@ setInterval(function() {
     var date = new Date();
 	var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 	try {
-		var last_seen = document.getElementsByClassName("i1XSV")[0].innerText;
+		var last_seen = document.getElementsByClassName("_3Id9P")[0].innerText;
 		if (checked === 0) {
 		    last_time = new Date(date);
 		    console.log(time + ' ' + last_seen);
